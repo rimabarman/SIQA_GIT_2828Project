@@ -12,10 +12,16 @@ packages:
   wpmServer: https://packages.webmethods.io
   wpmRegistry: licensed
 - name: TPP_services_in_FCS
+  version: "1.0"
   gitServerName: kvv
   gitUrl: https://github.com/Karthik-V-IBM-10
   gitUsername: Karthik-V-IBM-10
   gitBranch: main
+- name: SIQA_OriginTest_OnPremAssets
+  gitServerName: rimaSCName
+  gitUrl: https://github.com/vijetadixit
+  gitUsername: rimabarman
+  gitBranch: Test
 services:
 - serviceName: project.siqa_git_2828.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections:Database_1_Rima
   packages:
@@ -27,6 +33,8 @@ services:
     version: 10.3.0.0.34
     wpmServer: https://packages.webmethods.io
     wpmRegistry: licensed
+  - name: SIQA_OriginTest_OnPremAssets
+    version: "1.0"
 configurationVariables:
   ? artConnection.SIQA_GIT_2828Project.project.siqa_git_2828.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1_Rima.connectionSettings.datasourceClass
   : com.mysql.cj.jdbc.MysqlDataSource
