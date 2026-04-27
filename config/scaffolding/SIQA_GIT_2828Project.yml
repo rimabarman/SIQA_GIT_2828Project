@@ -18,16 +18,24 @@ packages:
   gitUsername: Karthik-V-IBM-10
   gitBranch: main
 - name: SIQA_OriginTest_OnPremAssets
+  version: "1.0"
   gitServerName: rimaSCName
   gitUrl: https://github.com/vijetadixit
   gitUsername: rimabarman
   gitBranch: Test
+- name: DADA_GlobalVariable1
+  gitServerName: MJANGit
+  gitUrl: https://github.com/manoj-jannu-IBM
+  gitUsername: manoj-jannu-IBM
+  gitBranch: main
 services:
 - serviceName: project.siqa_git_2828.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections:Database_1_Rima
   packages:
   - name: SIQA_GIT_2828Project
     version: "1.0"
   - name: TPP_services_in_FCS
+    version: "1.0"
+  - name: DADA_GlobalVariable1
     version: "1.0"
   - name: WmJDBCAdapter
     version: 10.3.0.0.34
